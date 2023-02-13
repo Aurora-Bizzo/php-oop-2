@@ -4,7 +4,7 @@
         public $name;
         public $icon;
 
-        public function __constructor($name, $icon){
+        public function __construct($name, $icon){
             $this->name = $name;
             $this->icon = $icon;
         }

@@ -4,7 +4,7 @@
         public $material;
         public $size;
 
-        public function __constructor(Category $category, $image, $material, $name, $price, $size)
+        public function __construct(Category $category, $image, $material, $name, $price, $size)
         {
             $this->material = $material;
             $this->size = $size;

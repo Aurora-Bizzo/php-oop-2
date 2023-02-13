@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
     include __DIR__.'/database/database.php';
 
 ?>
@@ -30,7 +34,8 @@
                                 ?>
                             </h5>
                             <p>
-                                Prezzo: € <?php
+                                Prezzo: € 
+                                <?php
                                    echo $product->price;
                                 ?>
                             </p>
@@ -50,8 +55,7 @@
                             <p>
                                 <?php
                                     if(isset ($product->ingredients)){
-                                        foreach($product->ingredients as $ingredient)
-                                        echo $ingredient." ";
+                                        echo $product->ingredients;
                                     }
                                     if(isset ($product->size)){
                                         echo $product->size;

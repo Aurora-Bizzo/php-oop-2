@@ -6,7 +6,7 @@
         public $name;
         public $price;
 
-        public function __construct(Categoria $category, $image, $name, $price)
+        public function __construct(Category $category, $image, $name, $price)
         {
             $this->category = $category;
             $this->image = $image;
